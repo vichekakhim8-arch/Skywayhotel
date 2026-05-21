@@ -24,13 +24,10 @@
     
       <!-- THUMBNAILS -->
       <div class="flex gap-3 mt-3 px-4 md:px-0 max-w-6xl mx-auto">
-        <img v-for="(img, index) in images" ref=""
-          :key="index"
-          :src="img"
-          @click="selectedImage = img"
+        <img v-for="(img, index) in images" ref="" :key="index"
+          :src="img" @click="selectedImage = img"
           class="w-24 h-20 object-cover rounded-lg cursor-pointer border-2 transition"
-          :class="selectedImage === img
-            ? 'border-blue-500 scale-105' : 'border-transparent opacity-70 hover:opacity-100'"/>
+          :class="selectedImage === img ? 'border-blue-500 scale-105': 'border-transparent opacity-70 hover:opacity-100'"/>
       </div>
 
     </div>
