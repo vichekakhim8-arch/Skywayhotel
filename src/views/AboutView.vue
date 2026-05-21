@@ -8,7 +8,7 @@
 
         <!-- IMAGE -->
         <img
-          src="/src/assets/image/logohotel.png"
+          src="/assets/image/logohotel.png"
           class="w-24 h-24 rounded-full object-cover border"
           alt="profile"
         />
@@ -104,7 +104,7 @@
 
           <div class="border-3 rounded-full w-30 h-30 flex items-center justify-center mx-auto border-red-900 ">
             <img
-              src="/src/assets/image/mypic.png"
+              src="/assets/image/mypic.png"
               class=" rounded-full mx-auto border-4 w-full h-full object-cover"
             />
           </div>
@@ -129,7 +129,7 @@
 
            <div class="border-3 rounded-full w-30 h-30 flex items-center justify-center mx-auto border-red-900 ">
             <img
-              src="/src/assets/image/pov.png"
+              src="/assets/image/pov.png"
               class=" rounded-full mx-auto border-4 w-full h-full object-cover"
             />
           </div>

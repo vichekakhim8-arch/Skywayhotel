@@ -76,49 +76,49 @@ const drinks = [
   {
     name: "Strawberry Mojito",
     price: "$1.50",
-    image: "/src/assets/image/srrawberry.png",
+    image: "/assets/image/srrawberry.png",
     description: "Cold refreshing Coca Cola with ice."
   },
   {
     name: "Pepsi",
     price: "$1.50",
-    image: "/src/assets/image/pepsi.png",
+    image: "/assets/image/pepsi.png",
     description: "Sweet fizzy Pepsi perfect for meals."
   },
   {
     name: "Orange Juice",
     price: "$2.00",
-    image: "/src/assets/image/orange.png",
+    image: "/assets/image/orange.png",
     description: "Fresh squeezed orange juice full of vitamins."
   },
   {
     name: "Lemon Tea",
     price: "$1.80",
-    image: "/src/assets/image/lemontea.png",
+    image: "/assets/image/lemontea.png",
     description: "Cool lemon tea with refreshing taste."
   },
   {
     name: "Milk Tea",
     price: "$2.50",
-    image: "/src/assets/image/milktea.png",
+    image: "/assets/image/milktea.png",
     description: "Sweet milk tea with chewy pearls."
   },
   {
     name: "Coffee",
     price: "$2.00",
-    image: "/src/assets/image/coffee.png",
+    image: "/assets/image/coffee.png",
     description: "Strong coffee to boost your energy."
   },
   {
     name: "Water",
     price: "$1.00",
-    image: "/src/assets/image/water.png",
+    image: "/assets/image/water.png",
     description: "Pure clean drinking water."
   },
   {
     name: "Energy Drink",
     price: "$2.20",
-    image: "/src/assets/image/energy.png",
+    image: "/assets/image/energy.png",
     description: "Energy drink for focus and power."
   }
 ];

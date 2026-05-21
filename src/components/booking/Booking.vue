@@ -3,7 +3,7 @@
   <div class="min-h-screen bg-gray-50 p-6">
     <router-link
         to="/hotels"
-        class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-900 text-white hover:bg-gray-800 transition"
+        class="inline-flex items-center gap-2 px-4 py-2 rounded-xl"
       >
         <i class="bi bi-arrow-left"></i>
         Back
@@ -208,7 +208,7 @@ const hotels = ref([
     name: 'Single Room',
     price: 120,
     location: 'Kampot',
-    image: '/src/assets/image/roomhotel1.png',
+    image: '/public/assets/image/roomhotel1.png',
     description: 'Luxury room with comfort'
   },
   {
@@ -216,7 +216,7 @@ const hotels = ref([
     name: 'Honeymoon room',
     price: 220,
     location: 'Kampot',
-    image: '/src/assets/image/roomhotel2.png',
+    image: '/public/assets/image/roomhotel2.png',
     description: 'Romantic stay'
   },
   {
@@ -224,7 +224,7 @@ const hotels = ref([
     name: 'Double Room',
     price: 180,
     location: 'Kampot',
-    image: '/src/assets/image/roomhotel3.png',
+    image: '/public/assets/image/roomhotel3.png',
     description: 'Modern design'
   },
   {
@@ -232,7 +232,7 @@ const hotels = ref([
     name: 'Triple Room',
     price: 250,
     location: 'Kampot',
-    image: '/src/assets/image/roomhotel4.png',
+    image: '/public/assets/image/roomhotel4.png',
     description: 'Spacious room'
   },
   {
@@ -240,7 +240,7 @@ const hotels = ref([
     name: 'Premium Family Room',
     price: 250,
     location: 'Kampot',
-    image: '/src/assets/image/roomhotel5.png',
+    image: '/public/assets/image/roomhotel5.png',
     description: 'Family comfort'
   },
   {
@@ -248,7 +248,7 @@ const hotels = ref([
     name: 'Family Room',
     price: 280,
     location: 'Kampot',
-    image: '/src/assets/image/roomhotel6.png',
+    image: '/public/assets/image/roomhotel6.png',
     description: 'Big family room'
   },
   {
@@ -256,7 +256,7 @@ const hotels = ref([
     name: 'Triple Room',
     price: 110,
     location: 'Kompot',
-    image: '/src/assets/image/roomhotel7.png',
+    image: '/public/assets/image/roomhotel7.png',
     description: 'Budget stay'
   },
   {
@@ -264,7 +264,7 @@ const hotels = ref([
     name: 'Ocean View Room',
     price: 220,
     location: 'Near Beach',
-    image: '/src/assets/image/roomhotel8.png',
+    image: '/public/assets/image/roomhotel8.png',
     description: 'Sea view'
   }
 ])

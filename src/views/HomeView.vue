@@ -4,58 +4,7 @@
     <!-- HERO SECTION -->
     <Section />
 
-    <!-- SEARCH CARD WRAPPER -->
-    <div class="relative w-[90%] md:w-[80%] mx-auto mt-10">
-
-      <!-- 🔵 ANIMATED GLOW BORDER -->
-      <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 blur opacity-40 animate-pulse"></div>
-
-      <!-- CARD -->
-      <div class="relative bg-white rounded-3xl shadow-xl p-6">
-
-        <h2 class="text-3xl font-bold text-center mb-2">
-          Search Hotels
-        </h2>
-
-        <p class="text-gray-500 text-center mb-8">
-          Find your perfect hotel instantly
-        </p>
-
-        <!-- FORM -->
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-5 items-end">
-
-          <!-- SEARCH INPUT -->
-          <div class="md:col-span-3">
-            <label class="block text-sm font-semibold text-gray-700 mb-2">
-              Hotel Name
-            </label>
-
-            <div class="relative">
-              <input
-                v-model="searchTitle"
-                type="text"
-                placeholder="Search hotels..."
-                class="w-full border border-gray-200 bg-gray-50 rounded-2xl pl-11 pr-4 py-3 outline-none focus:ring-2 focus:ring-blue-400 focus:bg-white transition"
-              />
-
-              <i class="bi bi-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
-            </div>
-          </div>
-
-          <!-- BUTTON -->
-          <div>
-            <button
-              class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-2xl font-semibold shadow-md hover:shadow-lg transition"
-            >
-              Search
-            </button>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
+    
     <!-- HOTEL LIST -->
     <div class="w-[90%] mx-auto mt-12">
       <h1 class="text-center font-bold text-3xl py-4">Popular Hotels</h1>
@@ -156,7 +105,7 @@ const hotels = ref([
     name: 'Single Room',
     price: 120,
     rating: 4.8,
-    image: '/src/assets/image/roomhotel1.png',
+    image: '/assets/image/roomhotel1.png',
     description: 'A beautiful luxury hotel with ocean view...',
   },
   {
@@ -164,7 +113,7 @@ const hotels = ref([
     name: 'Honeymoon room',
     price: 220,
     rating: 4.7,
-    image: '/src/assets/image/roomhotel2.png',
+    image: '/assets/image/roomhotel2.png',
     description: 'Welcome to SkyWayHotel...',
   },
   {
@@ -172,7 +121,7 @@ const hotels = ref([
     name: 'Double Room',
     price: 180,
     rating: 4.5,
-    image: '/src/assets/image/roomhotel3.png',
+    image: '/assets/image/roomhotel3.png',
     description: 'Our modern rooms...',
   },
   {
@@ -180,7 +129,7 @@ const hotels = ref([
     name: 'Triple Room',
     price: 250,
     rating: 4.6,
-    image: '/src/assets/image/roomhotel4.png',
+    image: '/assets/image/roomhotel4.png',
     description: 'Modern boutique hotel...',
   },
   {
@@ -188,7 +137,7 @@ const hotels = ref([
     name: 'Premium Family Rooml',
     price: 250,
     rating: 4.6,
-    image: '/src/assets/image/roomhotel5.png',
+    image: '/assets/image/roomhotel5.png',
     description: 'The hotel provides clean rooms...',
   },
   {
@@ -196,7 +145,7 @@ const hotels = ref([
     name: 'Family Room',
     price: 280,
     rating: 4.3,
-    image: '/src/assets/image/roomhotel6.png',
+    image: '/assets/image/roomhotel6.png',
     description: 'Comfortable beds and WiFi...',
   },
   {
@@ -204,7 +153,7 @@ const hotels = ref([
     name: 'Triple Room',
     price: 110,
     rating: 4.6,
-    image: '/src/assets/image/roomhotel7.png',
+    image: '/assets/image/roomhotel7.png',
     description: 'Near tourist attractions...',
   },
   {
@@ -212,7 +161,7 @@ const hotels = ref([
     name: 'Ocean View Room',
     price: 220,
     rating: 4.5,
-    image: '/src/assets/image/roomhotel8.png',
+    image: '/assets/image/roomhotel8.png',
     description: 'Perfect for vacations...',
   },
 ])

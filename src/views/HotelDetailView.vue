@@ -44,7 +44,7 @@
 
      <router-link
       to="/hotels"
-      class="m-3 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-900 text-white hover:bg-gray-800 transition"
+      class="m-3 inline-flex items-center gap-2 px-4 py-2 rounded-xl"
     >
       <i class="bi bi-arrow-left"></i>
       Back
@@ -140,11 +140,11 @@
 
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62749.57605654387!2d104.12695762982489!3d10.591015444849269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310836897d5fd26f%3A0x6f50ed443bd607ff!2sKampot!5e0!3m2!1sen!2skh!4v1779356423904!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+            <!-- <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
               <span class="bg-white/90 text-gray-700 px-3 py-1 rounded-full text-sm shadow">
                 Open Map View
               </span>
-            </div>
+            </div> -->
 
           </div>
 
@@ -169,13 +169,13 @@ const hotels = ref([
     name: 'Single Room',
     price: 120,
     rating: 4.8,
-    image: '/src/assets/image/roomhotel1.png',
+    image: '/assets/image/roomhotel1.png',
     description: 'A beautiful luxury hotel...',
     location: 'Kampot',
     images: [
-      '/src/assets/image/roomhotel1.png',
-      '/src/assets/image/roomhotel2.png',
-      '/src/assets/image/roomhotel3.png'
+      '/assets/image/roomhotel1.png',
+      '/assets/image/roomhotel2.png',
+      '/assets/image/roomhotel3.png'
     ],
     amenities: ['Free WiFi', 'Air Conditioning', 'Smart TV', 'Breakfast Included']
   },
@@ -184,13 +184,13 @@ const hotels = ref([
     name: 'Honeymoon room',
     price: 220,
     rating: 4.7,
-    image: '/src/assets/image/roomhotel2.png',
+    image: '/assets/image/roomhotel2.png',
     description: 'Welcome to SkyWayHotel...',
     location: 'Kampot',
     images: [
-      '/src/assets/image/roomhotel2.png',
-      '/src/assets/image/roomhotel3.png',
-      '/src/assets/image/roomhotel4.png'
+      '/assets/image/roomhotel2.png',
+      '/assets/image/roomhotel3.png',
+      '/assets/image/roomhotel4.png'
     ],
     amenities: ['Free WiFi', 'Pool Access', 'Breakfast', 'Room Service']
   },
@@ -203,9 +203,9 @@ const hotels = ref([
     description: 'Modern rooms...',
     location: 'Kampot',
     images: [
-      '/src/assets/image/roomhotel3.png',
-      '/src/assets/image/roomhotel4.png',
-      '/src/assets/image/roomhotel5.png'
+      '/assets/image/roomhotel3.png',
+      '/assets/image/roomhotel4.png',
+      '/assets/image/roomhotel5.png'
     ],
     amenities: ['Free WiFi', 'Air Conditioning', 'TV', 'Parking']
   },
@@ -214,13 +214,13 @@ const hotels = ref([
     name: 'Triple Room',
     price: 250,
     rating: 4.6,
-    image: '/src/assets/image/roomhotel4.png',
+    image: '/assets/image/roomhotel4.png',
     description: 'Boutique hotel...',
     location: 'Kampot',
     images: [
-      '/src/assets/image/roomhotel4.png',
-      '/src/assets/image/roomhotel5.png',
-      '/src/assets/image/roomhotel6.png'
+      '/assets/image/roomhotel4.png',
+      '/assets/image/roomhotel5.png',
+      '/assets/image/roomhotel6.png'
     ],
     amenities: ['Free WiFi', 'Breakfast', 'Gym', 'Spa']
   },
@@ -229,13 +229,13 @@ const hotels = ref([
     name: 'Premium Family Rooml',
     price: 250,
     rating: 4.6,
-    image: '/src/assets/image/roomhotel5.png',
+    image: '/assets/image/roomhotel5.png',
     description: 'Comfortable stay...',
     location: 'Kampot',
     images: [
-      '/src/assets/image/roomhotel5.png',
-      '/src/assets/image/roomhotel6.png',
-      '/src/assets/image/roomhotel7.png'
+      '/assets/image/roomhotel5.png',
+      '/assets/image/roomhotel6.png',
+      '/assets/image/roomhotel7.png'
     ],
     amenities: ['WiFi', 'Family Space', 'TV', 'Kitchen']
   },
@@ -244,13 +244,13 @@ const hotels = ref([
     name: 'Family Room',
     price: 280,
     rating: 4.3,
-    image: '/src/assets/image/roomhotel6.png',
+    image: '/assets/image/roomhotel6.png',
     description: 'Spacious rooms...',
     location: 'Kampot',
     images: [
-      '/src/assets/image/roomhotel6.png',
-      '/src/assets/image/roomhotel7.png',
-      '/src/assets/image/roomhotel8.png'
+      '/assets/image/roomhotel6.png',
+      '/assets/image/roomhotel7.png',
+      '/assets/image/roomhotel8.png'
     ],
     amenities: ['Free WiFi', 'AC', 'Breakfast', 'Pool']
   },
@@ -259,13 +259,13 @@ const hotels = ref([
     name: 'Triple Room',
     price: 110,
     rating: 4.6,
-    image: '/src/assets/image/roomhotel7.png',
+    image: '/assets/image/roomhotel7.png',
     description: 'Affordable stay...',
     location: 'Kompot',
     images: [
-      '/src/assets/image/roomhotel7.png',
-      '/src/assets/image/roomhotel8.png',
-      '/src/assets/image/roomhotel1.png'
+      '/assets/image/roomhotel7.png',
+      '/assets/image/roomhotel8.png',
+      '/assets/image/roomhotel1.png'
     ],
     amenities: ['WiFi', 'Parking', 'TV', 'Fan']
   },
@@ -275,12 +275,12 @@ const hotels = ref([
     location: 'Near Beach',
     price: 220,
     rating: 4.5,
-    image: '/src/assets/image/roomhotel8.png',
+    image: '/assets/image/roomhotel8.png',
     description: 'Perfect vacation spot...',
     images: [
-      '/src/assets/image/roomhotel8.png',
-      '/src/assets/image/roomhotel1.png',
-      '/src/assets/image/roomhotel2.png'
+      '/assets/image/roomhotel8.png',
+      '/assets/image/roomhotel1.png',
+      '/assets/image/roomhotel2.png'
     ],
     amenities: ['Ocean View', 'WiFi', 'Breakfast', 'Balcony']
   },

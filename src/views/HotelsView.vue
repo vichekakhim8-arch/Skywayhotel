@@ -5,9 +5,9 @@
     <HotelSection />
 
     <!-- SEARCH CARD -->
-    <router-link
+      <router-link
       to="/"
-      class="m-3 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-900 text-white hover:bg-gray-800 transition"
+      class="m-3 inline-flex items-center gap-2 px-4 py-2 rounded-xl"
     >
       <i class="bi bi-arrow-left"></i>
       Back
@@ -17,7 +17,7 @@
     <div class="relative w-[90%] md:w-[80%] mx-auto mt-10">
 
   <!-- 🔵 ANIMATED GLOW BORDER -->
-  <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 blur opacity-40 animate-pulse"></div>
+  <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-black via-cyan-400 to-black blur opacity-40 animate-pulse"></div>
 
   <!-- CARD -->
   <div class="relative bg-white rounded-3xl shadow-xl p-6 ">
@@ -35,9 +35,7 @@
 
       <!-- SEARCH INPUT -->
       <div class="md:col-span-3">
-        <label class="block text-sm font-semibold text-gray-700 mb-2">
-          Hotel Name
-        </label>
+        
 
         <div class="relative">
           <input
@@ -64,7 +62,7 @@
     </div>
 
   </div>
-</div>
+    </div>
 
     <!-- BODY -->
     <div class="w-full max-w-7xl mx-auto flex flex-col lg:flex-row gap-6 p-4 lg:p-6">
@@ -215,7 +213,7 @@ const hotels = ref([
     location: 'Mountain Hotel',
     price: 120,
     rating: 4.8,
-    image: '/src/assets/image/roomhotel1.png',
+    image: '/assets/image/roomhotel1.png',
     description: 'Luxury hotel with amazing service and relaxing rooms.'
   },
   {
@@ -224,7 +222,7 @@ const hotels = ref([
     location: 'Sihanoukville',
     price: 220,
     rating: 4.7,
-    image: '/src/assets/image/roomhotel2.png',
+    image: '/assets/image/roomhotel2.png',
     description: 'Romantic stay with sea view.'
   },
   {
@@ -233,7 +231,7 @@ const hotels = ref([
     location: 'Mondulkiri',
     price: 180,
     rating: 4.5,
-    image: '/src/assets/image/roomhotel3.png',
+    image: '/assets/image/roomhotel3.png',
     description: 'Our modern rooms are designed to give guests a relaxing and peaceful stay.',
   },
   {
@@ -242,7 +240,7 @@ const hotels = ref([
     location: 'Siem Reap',
     price: 250,
     rating: 4.6,
-    image: '/src/assets/image/roomhotel4.png',
+    image: '/assets/image/roomhotel4.png',
     description: 'Modern boutique hotel near famous tourist attractions.',
   },
   {
@@ -251,7 +249,7 @@ const hotels = ref([
     location: 'Siem Reap',
     price: 250,
     rating: 4.6,
-    image: '/src/assets/image/roomhotel5.png',
+    image: '/assets/image/roomhotel5.png',
     description: 'he hotel also provides clean bathrooms with modern facilities and daily room service.',
   },
   {
@@ -260,7 +258,7 @@ const hotels = ref([
     location: 'River side',
     price: 280,
     rating: 4.3,
-    image: '/src/assets/image/roomhotel6.png',
+    image: '/assets/image/roomhotel6.png',
     description: 'Each room includes comfortable beds, air conditioning, free Wi-Fi, and a smart TV.',
   },
   {
@@ -269,7 +267,7 @@ const hotels = ref([
     location: 'kompot City',
     price: 110,
     rating: 4.6,
-    image: '/src/assets/image/roomhotel7.png',
+    image: '/assets/image/roomhotel7.png',
     description: 'Modern boutique hotel near famous tourist attractions.',
   },
   {
@@ -278,7 +276,7 @@ const hotels = ref([
     location: 'Near Beach',
     price: 220,
     rating: 4.5,
-    image: '/src/assets/image/roomhotel8.png',
+    image: '/assets/image/roomhotel8.png',
     description: 'SkyWayHotel is the perfect place for vacations, business trips, and family stays.',
   },
   {
@@ -287,7 +285,7 @@ const hotels = ref([
     location: 'Near Beach',
     price: 220,
     rating: 4.5,
-    image: '/src/assets/image/roomhotel8.png',
+    image: '/assets/image/roomhotel8.png',
     description: 'SkyWayHotel is the perfect place for vacations, business trips, and family stays.',
   },
 

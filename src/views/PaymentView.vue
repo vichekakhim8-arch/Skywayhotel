@@ -1,11 +1,12 @@
 <template>
   <router-link
       to="/"
-      class="m-3 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-900 text-white hover:bg-gray-800 transition"
+      class="m-3 inline-flex items-center gap-2 px-4 py-2 rounded-xl"
     >
       <i class="bi bi-arrow-left"></i>
       Back
     </router-link>
+
   <div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50 to-emerald-50 p-6">
     <div class="w-full max-w-5xl grid md:grid-cols-2 bg-white/70 backdrop-blur-xl shadow-2xl rounded-3xl overflow-hidden border">
 
@@ -35,22 +36,22 @@
         <div class="space-y-3">
 
           <button @click="select('ABA')" :class="btnClass('ABA')">
-            <img src="/src/assets/logo/aba.png" class="w-10 h-10 object-contain" />
+            <img :src="logos.aba" class="w-10 h-10 object-contain" />
             <span>ABA Bank</span>
           </button>
 
           <button @click="select('WING')" :class="btnClass('WING')">
-            <img src="/src/assets/logo/wing.png" class="w-10 h-10 object-contain" />
+            <img :src="logos.wing" class="w-10 h-10 object-contain" />
             <span>Wing Bank</span>
           </button>
 
           <button @click="select('ACLEDA')" :class="btnClass('ACLEDA')">
-            <img src="/src/assets/logo/acleda.png" class="w-10 h-10 object-contain" />
+            <img :src="logos.acleda" class="w-10 h-10 object-contain" />
             <span>ACLEDA Bank</span>
           </button>
 
           <button @click="select('KHQR')" :class="btnClass('KHQR')">
-            <img src="/src/assets/logo/kh.png" class="w-10 h-10 object-contain" />
+            <img :src="logos.kh" class="w-10 h-10 object-contain" />
             <span>KHQR System</span>
           </button>
 
@@ -111,17 +112,22 @@ const route = useRoute()
 
 const location = route.query.location ?? "Location not available"
 
+const logos = {
+  aba:    "/assets/image/aba.png",
+  wing:   "/assets/image/wing.png",
+  acleda: "/assets/image/acleda.png",
+  kh:     "/assets/image/kh.png"
+}
+
 const selected = ref("")
 const paid = ref(false)
 const isLoading = ref(false)
 
-// select method
 const select = (method) => {
   selected.value = method
   paid.value = false
 }
 
-// button style
 const btnClass = (method) => [
   "w-full flex items-center gap-3 px-5 py-3 rounded-xl border transition font-medium",
   "hover:shadow-md hover:bg-gray-50",
@@ -130,12 +136,10 @@ const btnClass = (method) => [
     : "bg-white border-gray-200 text-gray-700"
 ]
 
-// QR code
 const qrCode = computed(() =>
   `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${selected.value || "KHQR"}_PAYMENT`
 )
 
-// payment
 const payNow = () => {
   if (!selected.value) {
     alert("Please select payment method first")
