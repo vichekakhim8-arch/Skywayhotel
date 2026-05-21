@@ -5,5 +5,5 @@
 </template>
 <script setup>
   // import booking
-  import Booking from '../components/Booking/Booking.vue'
+  import Booking from '../components/booking/Booking.vue'
 </script>
