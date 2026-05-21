@@ -15,16 +15,19 @@
           @click="goDetail(food)"
           class="cursor-pointer
                  min-w-[140px] sm:min-w-[170px] md:min-w-[200px]
-                 h-[140px] sm:h-[170px] md:h-[200px]
+                 h-[160px] sm:h-[180px] md:h-[200px]
                  rounded-2xl overflow-hidden shadow-md
                  shrink-0 bg-white
                  hover:scale-105 transition duration-300"
         >
+
+          <!-- IMAGE FIX -->
           <img
             :src="food.image"
-            class="w-full h-full object-cover"
+            class="w-full h-full object-cover object-center"
             :alt="food.name"
           />
+
         </div>
 
       </div>
@@ -36,20 +39,6 @@
 import { useRouter } from "vue-router";
 
 const router = useRouter();
-
-/*
-📁 YOUR FILE STRUCTURE MUST BE:
-public/
-  image/
-    buger.png
-    pizza.png
-    nodal.png
-    kako.png
-    loklak.png
-    pahokang.png
-    de.png
-    amok.png
-*/
 
 const foods = [
   { id: 1, name: "Burger", price: 5, image: "/assets/image/buger.png" },

@@ -6,9 +6,21 @@
 
       <!-- TITLE -->
       <div class="text-center mb-8">
-        <h1 class="text-3xl font-bold text-gray-800">
-          Drink Categories 
-        </h1>
+        <h1
+    class="relative text-3xl sm:text-4xl md:text-5xl font-extrabold text-center
+           text-transparent bg-clip-text
+           bg-gradient-to-r from-blue-600 via-cyan-400 to-blue-600
+           tracking-wide"
+  >
+    Drink Catary
+
+    <!-- underline glow -->
+    <span class="absolute left-1/2 -translate-x-1/2 bottom-[-10px]
+                 w-24 h-[4px] bg-gradient-to-r from-blue-500 to-cyan-400
+                 rounded-full blur-sm">
+    </span>
+
+  </h1>
         <p class="text-sm text-gray-500 mt-1">
           Choose your favorite drink
         </p>
