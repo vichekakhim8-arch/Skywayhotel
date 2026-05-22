@@ -2,7 +2,7 @@
   <div class="min-h-screen flex items-center justify-center bg-gray-100 px-4">
 
     <!-- BORDER WRAPPER -->
-    <div class="relative w-full max-w-md rounded-2xl p-[2px] overflow-hidden">
+    <div class="relative w-full max-w-md rounded-2xl p-[2px] overflow-hidden play-title">
 
       <!-- ANIMATED BORDER -->
       <div

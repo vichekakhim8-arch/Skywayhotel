@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex items-center justify-center bg-gray-100 px-4">
 
-    <div class="relative w-full max-w-md rounded-2xl p-[2px] overflow-hidden">
+    <div class="relative w-full max-w-md rounded-2xl p-[2px] overflow-hidden play-title ">
 
       <!-- BACKGROUND ANIMATION -->
       <div class="absolute -inset-10 animate-spin-slow bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>

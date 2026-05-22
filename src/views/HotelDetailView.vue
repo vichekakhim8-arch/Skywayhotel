@@ -42,7 +42,7 @@
     </div>
 
 
-     <router-link
+    <router-link
       to="/hotels"
       class="m-3 inline-flex items-center gap-2 px-4 py-2 rounded-xl"
     >
@@ -61,7 +61,7 @@
             <h2 class="text-2xl font-semibold">Overview</h2>
 
             <div class="flex items-center gap-1 text-yellow-500">
-              {{ hotel?.rating }}
+              <i class="bi bi-star-fill text-yellow-400"></i> {{ hotel?.rating }}
             </div>
           </div>
 

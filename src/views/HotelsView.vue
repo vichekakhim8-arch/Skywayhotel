@@ -142,16 +142,30 @@
           >
 
             <!-- IMAGE -->
-            <div class="relative overflow-hidden h-60">
-              <img
-                :src="item.image"
-                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-              />
+            <div class="relative overflow-hidden group">
 
-              <div class="absolute top-3 right-3 bg-white/90 text-xs px-2 py-1 rounded-full shadow">
-                ⭐ {{ item.rating }}
-              </div>
-            </div>
+  <!-- IMAGE -->
+  <img
+    :src="item.image"
+    class="h-[250px] w-full object-cover group-hover:scale-110 transition duration-500"
+  />
+
+  <!-- RATING -->
+  <div class="absolute top-3 right-3 bg-white/90 px-2 py-1 rounded-full shadow text-sm">
+    <i class="bi bi-star-fill text-yellow-400"></i> {{ item.rating }}
+  </div>
+
+  <!-- HEART ICON -->
+  <button
+    class="absolute top-3 left-3 w-10 h-10 rounded-full bg-white/90 flex items-center justify-center shadow-lg
+    opacity-0 group-hover:opacity-100
+    hover:bg-red-500 hover:text-white
+    transition duration-300"
+  >
+    <i class="bi bi-heart"></i>
+  </button>
+
+</div>
 
             <!-- CONTENT -->
             <div class="p-4 flex flex-col justify-between">
