@@ -6,9 +6,21 @@
 
       <!-- TITLE -->
       <div class="text-center mb-8">
-        <h1 class="text-3xl font-bold text-gray-800">
-          Drink Categories 
-        </h1>
+        <h1
+    class="relative text-3xl sm:text-4xl md:text-5xl font-extrabold text-center
+           text-transparent bg-clip-text
+           bg-gradient-to-r from-blue-600 via-cyan-400 to-blue-600
+           tracking-wide"
+  >
+    Drink Catary
+
+    <!-- underline glow -->
+    <span class="absolute left-1/2 -translate-x-1/2 bottom-[-10px]
+                 w-24 h-[4px] bg-gradient-to-r from-blue-500 to-cyan-400
+                 rounded-full blur-sm">
+    </span>
+
+  </h1>
         <p class="text-sm text-gray-500 mt-1">
           Choose your favorite drink
         </p>
@@ -76,49 +88,49 @@ const drinks = [
   {
     name: "Strawberry Mojito",
     price: "$1.50",
-    image: "/src/assets/image/srrawberry.png",
+    image: "/assets/image/srrawberry.png",
     description: "Cold refreshing Coca Cola with ice."
   },
   {
     name: "Pepsi",
     price: "$1.50",
-    image: "/src/assets/image/pepsi.png",
+    image: "/assets/image/pepsi.png",
     description: "Sweet fizzy Pepsi perfect for meals."
   },
   {
     name: "Orange Juice",
     price: "$2.00",
-    image: "/src/assets/image/orange.png",
+    image: "/assets/image/orange.png",
     description: "Fresh squeezed orange juice full of vitamins."
   },
   {
     name: "Lemon Tea",
     price: "$1.80",
-    image: "/src/assets/image/lemontea.png",
+    image: "/assets/image/lemontea.png",
     description: "Cool lemon tea with refreshing taste."
   },
   {
     name: "Milk Tea",
     price: "$2.50",
-    image: "/src/assets/image/milktea.png",
+    image: "/assets/image/milktea.png",
     description: "Sweet milk tea with chewy pearls."
   },
   {
     name: "Coffee",
     price: "$2.00",
-    image: "/src/assets/image/coffee.png",
+    image: "/assets/image/coffee.png",
     description: "Strong coffee to boost your energy."
   },
   {
     name: "Water",
     price: "$1.00",
-    image: "/src/assets/image/water.png",
+    image: "/assets/image/water.png",
     description: "Pure clean drinking water."
   },
   {
     name: "Energy Drink",
     price: "$2.20",
-    image: "/src/assets/image/energy.png",
+    image: "/assets/image/energy.png",
     description: "Energy drink for focus and power."
   }
 ];

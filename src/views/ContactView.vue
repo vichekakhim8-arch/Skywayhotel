@@ -1,181 +1,245 @@
 <template>
-  <div class="min-h-screen bg-gray-100 py-16 px-4">
+   <router-link
+      to="/"
+      class="m-3 inline-flex items-center gap-2 px-4 py-2 rounded-xl"
+    >
+      <i class="bi bi-arrow-left"></i>
+      Back
+    </router-link>
 
-    <!-- CONTAINER -->
-    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+  <div
+    class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50 to-emerald-50 p-6"
+  >
+    <div
+      class="w-full max-w-6xl grid lg:grid-cols-2 bg-white/70 backdrop-blur-xl shadow-2xl rounded-3xl overflow-hidden border"
+    >
 
       <!-- LEFT SIDE -->
-      <div class="bg-white rounded-2xl shadow-lg p-8">
+      <div class="p-8 md:p-10 bg-gradient-to-b from-white to-gray-50">
 
-        <h1 class="text-4xl font-bold tracking-wide">
-          <span class="text-5xl text-yellow-500 animate-bounce inline-block">C</span>
-          <span class="text-blue-600">ontact</span>
-          <span class="text-pink-500 hover:rotate-6 inline-block transition"> Ad</span>
-          <span class="text-2xl text-red-600 animate-pulse">min</span>
-      </h1>
+        <!-- TITLE -->
+        <div class="mb-6">
+          <h1 class="text-3xl font-bold text-gray-800">
+            Contact Information
+          </h1>
 
-        <p class="text-gray-500 mt-3">
-          We'd love to hear from you. Send us a message and we’ll respond as soon as possible.
-        </p>
+          <p class="text-gray-500 mt-2">
+            Get in touch with Sky Way Hotel anytime.
+          </p>
+        </div>
 
-        <!-- CONTACT INFO -->
-        <div class="mt-8 space-y-5">
+        
 
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-2xl">
-              <img src="/src/assets/image/logoaddress.png" alt="">
+        <!-- INFO -->
+        <div class="space-y-4">
+
+          <!-- ADDRESS -->
+          <div class="flex items-start gap-4 p-4 bg-white rounded-2xl border shadow-sm">
+            <div class="text-2xl">
+              <img :src="icons.address" class="w-8 h-8 object-contain mt-1" />
             </div>
-
+            
             <div>
-              <h3 class="font-semibold text-lg">
+              <h2 class="font-semibold text-gray-800">
                 Address
-              </h3>
+              </h2>
 
-              <p class="text-gray-500">
-                Phnom Penh, Cambodia
+              <p class="text-sm text-gray-500 mt-1">
+                Sky Way Hotel, Phnom Penh, Cambodia
               </p>
             </div>
           </div>
-
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-2xl">
-              <img src="/src/assets/image/logoPhone.png" alt="">
+          
+          <!-- PHONE -->
+          <div class="flex items-start gap-4 p-4 bg-white rounded-2xl border shadow-sm">
+            <div class="text-2xl">
+              <img :src="icons.phone" class="w-8 h-8 object-contain mt-1" />
             </div>
-
+            
             <div>
-              <h3 class="font-semibold text-lg">
+              <h2 class="font-semibold text-gray-800">
                 Phone
-              </h3>
+              </h2>
 
-              <p class="text-gray-500">
+              <p class="text-sm text-gray-500 mt-1">
                 +855 12 345 678
               </p>
             </div>
           </div>
 
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center text-2xl">
-              <img src="/src/assets/image/logoEmail.png" alt="Email">
+          <!-- EMAIL -->
+          <div class="flex items-start gap-4 p-4 bg-white rounded-2xl border shadow-sm">
+            <div class="text-2xl">
+              <img :src="icons.email" class="w-8 h-8 object-contain" />
             </div>
 
             <div>
-              <h3 class="font-semibold text-lg">
+              <h2 class="font-semibold text-gray-800">
                 Email
-              </h3>
+              </h2>
 
-              <p class="text-gray-500 hover:text-blue-500 transition duration-500 hover:underline cursor-pointer">
-                adminsava@gmail.com
+              <p class="text-sm text-gray-500 mt-1">
+                admin@skywayhotel.com
               </p>
             </div>
           </div>
 
         </div>
-
         <!-- MAP -->
-        <div class="mt-8 rounded-2xl overflow-hidden">
+        <div class="rounded-2xl overflow-hidden border shadow-md mb-6 mt-4">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125079.71693775736!2d104.82459216192369!3d11.57040464747404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513dc76a6be3%3A0x9c010ee85ab525bb!2sPhnom%20Penh!5e0!3m2!1sen!2skh!4v1779198740795!5m2!1sen!2skh"
-            width="600"
-            height="450"
-            style="border:0;"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125019.28551697!2d104.8226!3d11.5625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513f6c2e8f0b%3A0xfb5e6a6c0ba48a99!2sPhnom%20Penh%2C%20Cambodia!5e0!3m2!1sen!2skh!4v1699999999999"
+            width="100%"
+            height="300"
+            style="border: 0"
             allowfullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
 
       </div>
 
       <!-- RIGHT SIDE -->
-      <div class="bg-white rounded-2xl shadow-lg p-8">
+      <div class="p-8 md:p-10">
 
-        <h2 class="text-2xl font-bold text-gray-800">
-          Send Message
-        </h2>
+        <!-- HEADER -->
+        <div class="mb-6">
+          <h1 class="text-3xl font-bold text-gray-800">
+            Send Message
+          </h1>
 
-        <form class="mt-6 space-y-5">
+          <p class="text-gray-500 mt-2">
+            Contact admin directly using the form below.
+          </p>
+        </div>
+
+        <!-- FORM -->
+        <div class="space-y-5">
 
           <!-- NAME -->
-          <div>
-            <label class="text-sm font-medium text-gray-700">
-              Full Name
-            </label>
+          <div class="flex items-center gap-4 p-4 bg-white rounded-2xl border shadow-sm">
 
-            <div class="relative mt-1">
+            <input
+              v-model="form.name"
+              type="text"
+              placeholder="Your Name"
+              class="flex-1 outline-none text-gray-700 bg-transparent placeholder-gray-400"
+            />
+          </div>
 
-              <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
-                
-              </span>
+          <!-- PHONE -->
+          <div class="flex items-center gap-4 p-4 bg-white rounded-2xl border shadow-sm">
+            
 
-              <input
-                type="text"
-                placeholder="Enter your name"
-                class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl outline-none focus:border-blue-500"
-              />
-
-            </div>
+            <input
+              v-model="form.phone"
+              type="tel"
+              placeholder="Your Phone Number"
+              class="flex-1 outline-none text-gray-700 bg-transparent placeholder-gray-400"
+            />
           </div>
 
           <!-- EMAIL -->
-          <div>
-            <label class="text-sm font-medium text-gray-700">
-              Email
-            </label>
+          <div class="flex items-center gap-4 p-4 bg-white rounded-2xl border shadow-sm">
+            
 
-            <div class="relative mt-1">
-
-              <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
-                
-              </span>
-
-              <input
-                type="email"
-                placeholder="Enter your email"
-                class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl outline-none focus:border-blue-500"
-              />
-
-            </div>
+            <input
+              v-model="form.email"
+              type="email"
+              placeholder="Your Email"
+              class="flex-1 outline-none text-gray-700 bg-transparent placeholder-gray-400"
+            />
           </div>
 
           <!-- MESSAGE -->
-          <div>
-            <label class="text-sm font-medium text-gray-700">
-              Message
-            </label>
+          <div class="flex items-start gap-4 p-4 bg-white rounded-2xl border shadow-sm">
+            
 
-            <div class="relative mt-1">
+            <textarea
+              v-model="form.message"
+              rows="5"
+              placeholder="Your Message to Admin..."
+              class="flex-1 outline-none text-gray-700 bg-transparent placeholder-gray-400 resize-none"
+            ></textarea>
+          </div>
 
-              <span class="absolute left-3 top-4 text-gray-400">
-                
-              </span>
-
-              <textarea
-                rows="5"
-                placeholder="Write your message..."
-                class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl outline-none focus:border-blue-500 resize-none"
-              ></textarea>
-
-            </div>
+          <!-- SUCCESS -->
+          <div
+            v-if="submitted"
+            class="p-4 rounded-xl bg-emerald-50 border border-emerald-200"
+          >
+            <p class="text-emerald-700 font-semibold">
+              Message sent successfully!
+            </p>
           </div>
 
           <!-- BUTTON -->
           <button
-            class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-xl font-semibold transition"
+            @click="submitForm"
+            :disabled="isLoading"
+            class="w-full bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 active:scale-95 transition text-white py-3 rounded-xl font-semibold shadow-lg disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2"
           >
-            Send Message
+            <svg
+              v-if="isLoading"
+              class="animate-spin w-5 h-5 border-2 border-white border-t-transparent rounded-full"
+            ></svg>
+
+            <span v-if="!isLoading">
+              Send Message
+            </span>
+
+            <span v-else>
+              Sending...
+            </span>
           </button>
 
-        </form>
-
+        </div>
       </div>
 
     </div>
-
   </div>
 </template>
 
 <script setup>
-</script>
+import { ref } from "vue"
 
-<style scoped>
-</style>
+// icons
+const icons = {
+  name: "/assets/image/logoName.png",
+  phone: "/assets/image/logoPhone.png",
+  email: "/assets/image/logoEmail.png",
+  address: "/assets/image/logoaddress.png"
+}
+
+const form = ref({
+  name: "",
+  phone: "",
+  email: "",
+  message: ""
+})
+
+const isLoading = ref(false)
+const submitted = ref(false)
+
+const submitForm = () => {
+  if (!form.value.name || !form.value.email || !form.value.message) {
+    alert("Please fill in Name, Email, and Message.")
+    return
+  }
+
+  isLoading.value = true
+  submitted.value = false
+
+  setTimeout(() => {
+    isLoading.value = false
+    submitted.value = true
+
+    form.value = {
+      name: "",
+      phone: "",
+      email: "",
+      message: ""
+    }
+  }, 2000)
+}
+</script>

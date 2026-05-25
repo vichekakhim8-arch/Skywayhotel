@@ -43,7 +43,7 @@ const login = async () => {
 
     router.push("/")
   } finally {
-    loading.value = false // ✅ stop loading
+    loading.value = false // 
   }
 }
 </script>

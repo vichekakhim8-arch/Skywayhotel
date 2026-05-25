@@ -83,6 +83,7 @@ const routes = [
   name: 'drink-detail',
   component: DrinkView
 }
+
   
 ]
 
