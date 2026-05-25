@@ -15,7 +15,7 @@
         </h1>
 
         <p class="text-gray-500 mt-2 text-sm lg:text-base">
-          Manager bookings system
+          Manager bookings systems
         </p>
       </div>
 
