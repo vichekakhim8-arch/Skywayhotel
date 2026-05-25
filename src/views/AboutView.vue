@@ -102,19 +102,29 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
   <!-- MEMBER 1 -->
-  <div class="relative p-[2px] rounded-2xl overflow-hidden animate-border">
+  <div class="group relative p-[2px] rounded-2xl overflow-hidden">
 
-    <!-- glowing border layer -->
+    <!-- glowing border -->
     <div class="absolute inset-0 bg-gradient-to-r from-red-500 via-pink-500 to-red-500 animate-spin-slow"></div>
 
     <!-- card -->
-    <div class="relative bg-white rounded-2xl shadow-md p-6 text-center">
+    <div class="relative bg-white rounded-2xl shadow-md p-6 text-center overflow-hidden">
 
-      <div class="relative w-30 h-30 mx-auto ">
+      <!-- IMAGE -->
+      <div class="relative w-32 h-32 mx-auto">
         <img
           src="/assets/image/mypic.png"
-          class="rounded-full w-full h-full object-cover border-4 border-white"
+          class="rounded-full w-full h-full object-cover border-4 border-white transition duration-500 group-hover:blur-sm group-hover:scale-110"
         />
+
+        <!-- CONTACT OVERLAY -->
+        <div
+          class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500"
+        >
+          <a href="https://t.me/babykonta" target="_blank" class="bg-sky-500 text-white px-4 py-2 rounded-xl text-sm shadow-lg">
+            Contact Me
+          </a>
+        </div>
       </div>
 
       <h2 class="mt-4 text-xl font-bold">Vicheka</h2>
@@ -130,19 +140,29 @@
   </div>
 
   <!-- MEMBER 2 -->
-  <div class="relative p-[2px] rounded-2xl overflow-hidden animate-border">
+  <div class="group relative p-[2px] rounded-2xl overflow-hidden">
 
-    <!-- glowing border layer -->
+    <!-- glowing border -->
     <div class="absolute inset-0 bg-gradient-to-r from-yellow-400 via-purple-500 to-yellow-400 animate-spin-slow"></div>
 
     <!-- card -->
-    <div class="relative bg-white rounded-2xl shadow-md p-6 text-center">
+    <div class="relative bg-white rounded-2xl shadow-md p-6 text-center overflow-hidden">
 
-      <div class="relative w-30 h-30 mx-auto">
+      <!-- IMAGE -->
+      <div class="relative w-32 h-32 mx-auto">
         <img
           src="/assets/image/pov.png"
-          class="rounded-full w-full h-full object-cover border-4 border-white"
+          class="rounded-full w-full h-full object-cover border-4 border-white transition duration-500 group-hover:blur-sm group-hover:scale-110"
         />
+
+        <!-- CONTACT OVERLAY -->
+        <div
+          class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500"
+        >
+          <a href="https://t.me/your_username" target="_blank" class="bg-sky-500 text-white px-4 py-2 rounded-xl text-sm shadow-lg">
+            Contact Me
+          </a>
+        </div>
       </div>
 
       <h2 class="mt-4 text-xl font-bold">Sery Pov</h2>
@@ -155,10 +175,10 @@
       </div>
 
     </div>
-
   </div>
 
 </div>
+
 
 
 
@@ -172,6 +192,14 @@
 <script setup>
 </script>
 <style scoped>
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg) scale(1.2);
+  }
+}
+      
+
 @keyframes spin-slow {
   0% {
     transform: rotateZ(0deg) translateZ(0);
@@ -212,4 +240,5 @@
 .play-title {
   animation: floatText 2s ease-in-out infinite;
 }
+
 </style>
