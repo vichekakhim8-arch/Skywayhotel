@@ -159,7 +159,7 @@
         <div
           class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500"
         >
-          <a href="https://t.me/your_username" target="_blank" class="bg-sky-500 text-white px-4 py-2 rounded-xl text-sm shadow-lg">
+          <a href="https://t.me/mynameispov" target="_blank" class="bg-sky-500 text-white px-4 py-2 rounded-xl text-sm shadow-lg">
             Contact Me
           </a>
         </div>
