@@ -113,11 +113,11 @@
           </div>
 
           <router-link
-            to="/booking"
-            class="block text-center w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-semibold shadow-md transition"
-          >
-            Booking Now
-          </router-link>
+  :to="`/booking/${hotel.id}`"
+  class="block text-center w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-semibold shadow-md transition"
+>
+  Booking Now
+</router-link>
 
         </div>
 

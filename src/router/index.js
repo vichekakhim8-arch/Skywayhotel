@@ -12,7 +12,9 @@ import AboutView from '../views/AboutView.vue'
 import ContactView from '../views/ContactView.vue'
 import FooddetailView from '../views/FooddetailView.vue'
 import DrinkView from '../views/DrinkView.vue'
+
 const routes = [
+
   {
     path: '/',
     name: 'home',
@@ -31,8 +33,9 @@ const routes = [
     component: HotelDetailView
   },
 
+  /* FIX HERE */
   {
-    path: '/booking',
+    path: '/booking/:id',
     name: 'booking',
     component: BookingView
   },
@@ -66,25 +69,25 @@ const routes = [
     name: 'about',
     component: AboutView
   },
-  
+
   {
     path: '/contact',
     name: 'contact',
     component: ContactView
-
   },
-{
-  path: '/Fooddetail',
-  name: 'Fooddetail',
-  component: FooddetailView
-},
-{
-  path: '/drink',
-  name: 'drink-detail',
-  component: DrinkView
-}
 
-  
+  {
+    path: '/Fooddetail',
+    name: 'Fooddetail',
+    component: FooddetailView
+  },
+
+  {
+    path: '/drink',
+    name: 'drink-detail',
+    component: DrinkView
+  }
+
 ]
 
 const router = createRouter({
